@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 23px;
+}
+body {
+    background: #f6f6f6;
+    font-family: "EB Garamond", "Helvetica Neue", "Segoe UI", sans-serif;
+    color: #333;
+    line-height: 1.5rem;
+    font-weight: 400;
+    min-width: 325px;
+}
+
+a {
+    color: #0034ff;
+    text-decoration: none;
+}
+    a:hover {
+        color: #000;
+    }
+
+img {
+        max-width: 100%;
+}
+    
+figure {
+        margin: 0;
+        text-align: center;
+}
+
+h2 {
+    font-weight: 500;
+    line-height: 1.3em;
+    margin: 45px 0 20px 0;
+    font-size: 1.5rem;
+}
+
+.half {
+    max-width: 70%;
+}
+
+.wrap {
+    background: #fff;
+    margin: 0 auto;
+    padding: 90px 120px;
+}
+
+.container {
+    max-width: 1100px;
+    min-width: 320px;
+}
+
+.header {
+    margin-bottom: 90px;
+    display: flex;
+    flex-wrap: wrap;
+}
+    .header .logo, .header .nav {
+        flex-grow: 1;
+    }
+    .header .nav {
+        text-align: right;
+    }
+    .header .nav a {
+        display: inline-block;
+        margin-left: 30px;
+    }
+    .header .nav a.active {
+        color: inherit;
+    }
+
+.slogan {
+    margin: 0 0 60px 0;
+    font-style: italic;
+}
+
+.photo {
+    float: right;
+    text-align: right;
+}
+    .photo img {
+        border-radius: 50%;
+        display: inline-block;
+        max-width: 234px;
+    }
+
+.pols {
+    margin: 20px -120px 0 -120px;
+}
+    .pols figure {
+        position: relative;
+        overflow: hidden;
+        height: 0;
+        opacity: 0;
+        transition: height 0ms 3000ms, opacity 3000ms 0ms;
+    }
+    .pols figure.visible {
+        height: auto;
+        opacity: 1;
+        transition: height 0ms 0ms, opacity 3100ms 0ms;
+    }
+     .pols figure figloc {
+        position: absolute;
+        bottom: 45px;
+        right: 20px;
+        font-size: 0.775em;
+        color:#999
+    }
+    .pols figure figcaption {
+      position: relative;
+      font-size: 0.775em;
+      color: #000000;
+    }
+
+.footer {
+    text-align: center;
+    color: #999;
+    margin: 30px 0;
+}
+
+@font-face {
+    font-family: 'EB Garamond';
+    font-style: italic;
+    font-weight: 400;
+    src: url(eb_garamond-6.woff) format(woff);
+}
+
+@font-face {
+    font-family: 'EB Garamond';
+    font-style: normal;
+    font-weight: 400;
+    src: url(eb_garamond-13.woff) format(woff);
+}
+
+.contact form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:20px;
+  }
+  
+  .contact form label{
+    display:block;
+  }
+  
+  .contact form p{
+    margin:0;
+  }
+  
+  .contact form .full{
+    grid-column: 1 / 3;
+  }
+  
+  .contact form button, .contact form input, .contact form textarea{
+    width:100%;
+    padding:1em;
+    border:1px solid #c9e6ff;
+  }
+  
+  .contact form button{
+    background:#6bb5f5;
+    border:0;
+    text-transform: uppercase;
+  }
+  
+  .contact form button:hover,.contact form button:focus{
+    background:#033c75;
+    color:#fff;
+    outline:0;
+    transition: background-color 0.5s ease-out;
+  }
+  
+  .alert{
+    text-align: center;
+    padding:10px;
+    background:#3be93b;
+    color:#fff;
+    margin-bottom:10px;
+    display:none;
+  }  
